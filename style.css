@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* - Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  max-width: 1440px;
+  max-height: 100vh;
+  margin: 0 3rem;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 2rem 0;
+}
+
+.logo {
+  width: 14rem;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 75rem;
+}
+
+.images {
+  width: 40rem;
+  height: 30rem;
+}
+
+.text {
+  width: 35rem;
+  height: 30rem;
+  padding: 1.5rem 0 2.5rem 2.5rem;
+}
+
+.mockups {
+  width: 40rem;
+}
+
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+p {
+  color: hsl(300, 31%, 86%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin: 1.5rem 0;
+}
+
+.btn {
+  border-radius: 3rem;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem 4rem;
+  box-shadow: 1px 5px 15px hsl(256, 15%, 26%);
+}
+
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.footer {
+  width: 75rem;
+  height: 3rem;
+  display: flex;
+  justify-content: end;
+}
+
+a .fa-brands {
+  color: rgb(215, 204, 204);
+}
+
+.fa-facebook,
+.fa-twitter {
+  padding-right: 1rem;
+}
+
+.fa-brands:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+i {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 37.5rem) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-top: 1rem;
+    width: 12rem;
+  }
+
+  nav {
+    width: 30rem;
+  }
+
+  .page {
+    flex-direction: column;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images {
+    width: 30rem;
+    height: auto;
+    margin: 3rem auto;
+  }
+
+  .text {
+    width: 30rem;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  .mockups {
+    width: 30rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin: 2rem 0;
+  }
+
+  .btn {
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem 7rem;
+    box-shadow: 1px 5px 15px hsl(256, 15%, 26%);
+  }
+
+  .footer {
+    width: 30rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+}
